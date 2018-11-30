@@ -1,0 +1,27 @@
+// Import
+@import url('https://fonts.googleapis.com/css?family=Heebo:400,700');
+
+html {
+    font-family: 'Heebo', sans-serif;
+    font-size: 1rem;
+    font-style: 400;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+// Nav
+#nav-wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(-100vw);
+    background: red;
+}
+
+#nav-menu {
+    height: 100px;
+    width: 100px;
+    background: black;
+}
