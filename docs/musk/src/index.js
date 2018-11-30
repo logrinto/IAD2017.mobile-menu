@@ -15,3 +15,4 @@ import "./styles.scss";
         header.classList.toggle('menu-opened');
     }
 }());
+

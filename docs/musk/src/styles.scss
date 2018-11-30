@@ -25,7 +25,7 @@
 $cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 $mukta: 'Ek Mukta', sans-serif;;
 
-$menuItems: 7;
+$menuItems: 11;
 
 .window {
   overflow: hidden;
@@ -33,7 +33,7 @@ $menuItems: 7;
   background: #ffffff;
 
   .header {
-    position: absolute;
+    position: fixed;
     display: block;
     top: 0;
     left: 0;
@@ -43,6 +43,7 @@ $menuItems: 7;
     transition: all 0.5s ease-out, background 1s ease-out;
     transition-delay: 0.2s;
     z-index: 1;
+    text-align: right;
     .burger-container {
       position: relative;
       display: inline-block;
@@ -65,7 +66,7 @@ $menuItems: 7;
           height: 1px;
           display: block;
           position: relative;
-          background: #000000;
+          background: #000;
           transition: all 0.3s $cubic;
           transition-delay: 0s;
           &.topBar {
@@ -103,7 +104,14 @@ $menuItems: 7;
       display: block;
       padding: 0px 48px 0;
       list-style: none;
+      margin: 0;
+      height: calc(100% - 50px);
+      overflow: hidden;
+      background-color: #ffffff;
+      overflow-y: auto;
+
       li.menu-item {
+        text-align: left;
         border-bottom: 1px solid #000;
         margin-top: 5px;
         transform: scale(1.15) translateY(-30px);
@@ -193,7 +201,6 @@ $menuItems: 7;
   }
   @media(max-width: 600px) {
     width: 100%;
-    height: 100vh;
     margin: 0;
     border-radius: 0px;
     .header {
@@ -202,6 +209,7 @@ $menuItems: 7;
   }
 }
 // classes and id's
+
 #title {
   margin-top: 100px;
 }
