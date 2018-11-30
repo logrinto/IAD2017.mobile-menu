@@ -12,6 +12,20 @@ h1 {
     text-align: center;
 }
 
+p {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    padding: 0;
+}
+
 .window .header {
     position: absolute;
     display: block;
