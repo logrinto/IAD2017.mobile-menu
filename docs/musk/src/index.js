@@ -7,6 +7,11 @@ import "./styles.scss";
 // test.log()
 
 // Burgermenu Starts Here
-$('.hamburger').click (function(){
-    $(this).toggleClass('open');
-});
+(function(){
+    let burger = document.querySelector('.burger-container'),
+        header = document.querySelector('.header');
+
+    burger.onclick = function() {
+        header.classList.toggle('menu-opened');
+    }
+}());
