@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Antic+Didone|Arya:400,700|Tinos');
+
+body {
+	background:#fff;
+	margin:0;
+    padding:0;
+    font-size: 1rem;
+}
+.menu {
+	background:#ecf2f9;
+	display:none;
+	width:100%;
+}
+.menu ul {
+    font-family: 'Arya', serif;
+    font-weight: 700;
+	list-style:none;
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.menu ul li {
+	color:#1f4060;
+	font-size:1em;
+	letter-spacing:2px;
+	padding:15px 0;
+	text-transform:uppercase;
+}
+.menu ul li:hover {
+    background:#d8e5f3;
+}
+.menu a {
+    text-decoration:none;
+	color: #1f4060;
+}
+.menu-toggle {
+	background:none;
+    color: #1f4060;
+	width:100%;
+	text-align:center;
+	padding:10px 0;
+	font-size:25px;
+}
+.menu-toggle a {
+	text-decoration:none;
+	color: #1f4060;
+}
+
+#toggle {
+    font-size: 2em;
+    color: #9ebde0;
+}
+
+#toggle:hover {
+    color: #1f4060;
+    transition: 0.7s;
+}
+
+#toggle:active {
+    color: #1f4060;
+    transform: scale(5);
+}
+
+.open #toggle {
+    transform: rotate(180deg);
+}
+
+.about {
+    font-family: 'Antic Didone', serif;
+    font-size:4em;
+    margin-top:7%;
+    text-align:center;
+    color:#1f4060;
+    width:100%;
+}
+
+.grundtext {
+    width: 720px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-family: 'Arya', serif;
+    font-weight: Bold;
+    font-size: 1.6em;
+    line-height: 1.4;
+    color:#1f4060;
+    margin-top: 10%;
+}
+
+h3 {
+    font-family: 'Arya', serif;
+    font-weight: Bold;
+    font-size: 1.3em;
+    line-height: 1;
+    color:#1f4060;
+    margin-top: 6%;
+}
+
+p {
+    font-family: 'Tinos', serif;
+    font-weight: 400;
+    font-size: 1.3em;
+    line-height: 1.4;
+    color:#1f4060;
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        font-size: 0.8rem;
+    }
+
+    .grundtext {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
