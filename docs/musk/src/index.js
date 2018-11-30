@@ -10,5 +10,3 @@ import "./styles.scss";
 $('.hamburger').click (function(){
     $(this).toggleClass('open');
 });
-
-

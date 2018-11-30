@@ -24,7 +24,8 @@
 // Menu
 .hamburger {
   cursor: pointer;
-  position: absolute;
+  position: fixed;
+  right: 10px;
   width: 48px;
   height: 48px;
   transition: all 0.25s;
