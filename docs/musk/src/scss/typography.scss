@@ -39,12 +39,17 @@ li {
 }
 
 
-a{
-  text-decoration: underline;
+.link{
+  text-decoration: none;
   text-decoration-color: yellow;
-  color: black;
+  background-color: transparent;
+  color: inherit;
+  border-bottom: 1px solid yellow;
+  box-shadow: inset 0 -14px 0 yellow;
 }
 
-a:hover {
+.link:hover {
+
+  background-size: 4px 50px;
   background-color: yellow;
 }
