@@ -1,6 +1,9 @@
 import $ from 'jquery';
 import 'what-input';
 
+// Import toggle function for jQuery library
+import './lib/jquery.func_toggle';
+
 // Foundation JS relies on a global varaible. In ES6, all imports are hoisted
 // to the top of the file so if we used`import` to import Foundation,
 // it would execute earlier than we have assigned the global variable.
@@ -16,19 +19,39 @@ require('foundation-sites');
 
 $(document).foundation();
 
-// menu switch open & close
+// menu switch in, passiv & out
 let navmenu = document.getElementById('nav-menu');
 let navwrapper = document.getElementById('nav-wrapper');
-function menu_state_active(){
+let navpicture = document.getElementById('nav-picture');
+$(navmenu).funcToggle('click', function() {
     $(navwrapper).css({
+        transform: 'translateX(0)',
+    });
+    $(navpicture).css({
         transform: 'translateX(0)'
     });
-    $(this).one("click", menu_state_deactive);
-};
-function menu_state_deactive(){
+    $('#nav-menu-outer > p:first').html("");
+    $(navmenu).css('transform','rotate(225deg)');
+    $(navmenu).css('left','80px');
+    $('#nav-menu-outer').css('left','80px');
+}, 
+function() {
     $(navwrapper).css({
-        transform: 'translateX(-100vw)'
+        transform: ''
     });
-    $(this).one("click", menu_state_active);
-};
-$(navmenu).one("click", menu_state_active);
+    $(navpicture).css({
+        transform: ''
+    });
+    $('#nav-menu-outer > p:first').html("MENU");
+    $(navmenu).css('transform','');
+    $(navmenu).css('left','');
+    $('#nav-menu-outer').css('left','');
+
+});
+
+// background picture change function
+$(".evan").hover(function(){
+    $(navpicture).css("background-image", "url('./assets/img/evanspiegel.jpg')");
+    }, function(){
+    $(navpicture).css("background-image", "url('./assets/img/kimdotcom.jpg')");
+});
