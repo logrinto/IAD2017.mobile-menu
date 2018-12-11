@@ -1,27 +1,111 @@
 // Import
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700');
 
+// Basic
+
 html {
     font-family: 'Heebo', sans-serif;
     font-size: 1rem;
     font-style: 400;
+    background-color: #ffffff;
+    min-height: 100vh;
 }
 
 body {
     overflow-x: hidden;
+    background-color: #f5f5f5;
+    z-index: 100;
+    height: 100vh;
 }
 
 // Nav
+
 #nav-wrapper {
     position: absolute;
-    width: 100vw;
-    height: 100vh;
-    transform: translateX(-100vw);
-    background: red;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateX(-100%);
+    background: #fff;
+    padding: 70px;
+    // border: 70px solid #f5f5f5;
 }
 
 #nav-menu {
-    height: 100px;
-    width: 100px;
-    background: black;
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    left: 20px;
+    top: calc(50vh - 20px);
+    z-index: 900;
+    background: url(../img/SVG/menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
+#nav-menu-outer {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    left: 20px;
+    top: calc(50vh - 20px);
+    z-index: 900;
+}
+
+.nav-label {
+    transform: rotate(270deg) translateX(-9px) translateY(30px);
+    font-size: 60%;
+    font-weight: 700;
+    letter-spacing: 2px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+}
+
+#nav-menu:hover {
+    transform: rotate(180deg);
+}
+
+#nav-picture {
+    width: 100%;
+    height: calc(100vh - 140px);
+    background: blue;
+    transform: translateX(calc(-100% - 6rem));
+    background: url(../img/kimdotcom.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+// Motion
+
+.transition-fast {
+    transition: transform 500ms cubic-bezier(1, 0, 0, 1);
+    -moz-transition: transform 500ms cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: transform 500ms cubic-bezier(1, 0, 0, 1);
+    -o-transition: transform 500ms cubic-bezier(1, 0, 0, 1);
+}
+
+.transition-slow {
+    transition: transform 600ms cubic-bezier(1, 0, 0, 1);
+    -moz-transition: transform 600ms cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: transform 600ms cubic-bezier(1, 0, 0, 1);
+    -o-transition: transform 600ms cubic-bezier(1, 0, 0, 1);
+}
+
+.transition-left {
+    transition: transform 600ms cubic-bezier(1, 0, 0, 1), left 600ms cubic-bezier(1, 0, 0, 1);
+    -moz-transition: transform 600ms cubic-bezier(1, 0, 0, 1), left 600ms cubic-bezier(1, 0, 0, 1);
+    -webkit-transition: transform 600ms cubic-bezier(1, 0, 0, 1), left 600ms cubic-bezier(1, 0, 0, 1);
+    -o-transition: transform 600ms cubic-bezier(1, 0, 0, 1), left 600ms cubic-bezier(1, 0, 0, 1);
+}
+
+// Classes
+
+.overflow-x {
+    overflow-x: hidden;
 }
