@@ -31,8 +31,8 @@ $(navmenu).funcToggle('click', function() {
         transform: 'translateX(0)'
     });
     $('#nav-menu-outer > p:first').html("");
-    $(navmenu).css('transform','rotate(225deg)');
-    $(navmenu).css('left','80px');
+    $(navmenu).css('transform','rotate(225deg)').css('left','80px');
+    $('body').css('overflow-y', 'hidden');
     $('#nav-menu-outer').css('left','80px');
 }, 
 function() {
@@ -43,10 +43,9 @@ function() {
         transform: ''
     });
     $('#nav-menu-outer > p:first').html("MENU");
-    $(navmenu).css('transform','');
-    $(navmenu).css('left','');
+    $(navmenu).css('transform','').css('left','');
+    $('body').css('overflow-y', '');
     $('#nav-menu-outer').css('left','');
-
 });
 
 // background picture change function
