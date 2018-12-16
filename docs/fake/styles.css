@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+SC:400,500,700,900');
+body {
+  font-family: 'Noto Sans SC', sans-serif;
+  vertical-align: middle;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: manipulation;
+}
+
+* {
+    user-select: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  font-family: inherit;
+}
+
+.button {
+  cursor: pointer;
+  color:white;
+}
+
+a {
+  display:inline-block;
+  text-decoration: none;
+}
+
+.link {
+  color: inherit;
+}
+
+.list{
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  margin: auto;
+  padding-top:2rem;
+}
+
+/*
+=====
+LEVEL 2. MENU STYLES
+=====
+*/
+
+/* menu */
+
+.header {
+  box-sizing: border-box;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 9998;
+}
+
+.menu {
+  box-sizing: border-box;
+  width: 100%;
+  padding-bottom: 55px;
+  background-color: #843b62;
+  height: 0;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  opacity: 0;
+  display: flex;
+  align-items: flex-end;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.menuList {
+  box-sizing: border-box;
+  max-height: 100%;
+  display: none;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.menuGroup{
+  padding: .5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color:white;
+}
+
+.menuItem {
+  padding: 8px 25px;
+  display: block;
+}
+
+/* hamburger */
+
+.hamburger {
+  position: relative;
+  line-height: 1;
+  padding-bottom: .5em;
+}
+
+.hamburger:before {
+  content :"";
+  width: 100px;
+  height: 100px;
+  background-color: #843b62;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -55px;
+  left: -35px;
+}
+
+.hamburgerButton {
+  width: 1.4em;
+  height: 1em;
+  font-size: 20px;
+
+  position: relative;
+  text-indent: -9999px;
+  z-index: 2;
+}
+
+.hamburgerButton:before, .hamburgerButton:after, .hamburgerLabel {
+  width: 100%;
+  height: 20%;
+  border-radius: 5px;
+  background-color: currentColor;
+  position: absolute;
+  left: 0;
+}
+
+.hamburgerButton:before, .hamburgerButton:after {
+  content:"";
+}
+
+.hamburgerButton:before {
+  top: 0;
+}
+
+.hamburgerButton:after {
+  bottom: 0;
+}
+
+.hamburgerButton:focus {
+  outline: none;
+}
+
+.hamburgerLabel {
+  margin-top: -.1em;
+  top: 50%;
+}
+
+/* activated state */
+
+.js-menuActivated {
+  overflow: hidden;
+}
+
+.js-menuActivated .menu {
+  height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  opacity: 1;
+}
+
+.js-menuActivated .hamburger:before {
+  width: 100vh;
+  height: 100vh;
+  background-color: #843b62;
+  -webkit-transform: translate3d(-50vh, -50vh, 0) scale(5);
+          transform: translate3d(-50vh, -50vh, 0) scale(5);
+}
+
+.js-menuActivated .menuList {
+  display: block;
+}
+
+.js-menuActivated .hamburgerButton:before {
+  -webkit-transform: translate3d(0, -50%, 0) rotate(45deg);
+          transform: translate3d(0, -50%, 0) rotate(45deg);
+  top: 50%;
+}
+
+.js-menuActivated .hamburgerButton:after {
+  -webkit-transform: translate3d(0, -50%, 0) rotate(135deg);
+          transform: translate3d(0, -50%, 0) rotate(135deg);
+  top: 50%;
+}
+
+.js-menuActivated .hamburgerLabel {
+  -webkit-transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+          transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+  opacity: 0;
+}
+
+/*
+=====
+LEVEL 3. MOBILE ANIMATION STYLES
+=====
+*/
+
+.menu {
+  transition: opacity .2s ease-out;
+}
+
+.js-menuActivated .menu {
+  will-change: opacity;
+  transition-duration: .2s;
+  transition-delay: .3s;
+}
+
+.hamburger:before {
+  will-change: width, height;
+  transition: width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    -webkit-transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+  transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+  transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    -webkit-transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+}
+
+.js-menuActivated .hamburger:before {
+  transition-duration: 1s;
+}
+
+.hamburgerButton:before, .hamburgerButton:after {
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.hamburgerButton:before, .hamburgerButton:after, .hamburgerLabel {
+  transition-timing-function: ease;
+  transition-duration: .15s;
+}
+
+.hamburgerLabel {
+  transition-property: opacity, -webkit-transform;
+  transition-property: transform, opacity;
+  transition-property: transform, opacity, -webkit-transform;
+}
