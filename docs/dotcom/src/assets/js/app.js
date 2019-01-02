@@ -30,10 +30,10 @@ $(navmenu).funcToggle('click', function() {
     $(navpicture).css({
         transform: 'translateX(0)'
     });
-    $('#nav-menu-outer > p:first').html("");
-    $(navmenu).css('transform','rotate(225deg)').css('left','80px');
+    $('#nav-menu-outer > p:first').html("CLOSE");
+    $(navmenu).css('transform','rotate(225deg)').css('left','65px');
     $('body').css('overflow-y', 'hidden');
-    $('#nav-menu-outer').css('left','80px');
+    $('#nav-menu-outer').css('left','65px');
 }, 
 function() {
     $(navwrapper).css({
