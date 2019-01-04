@@ -4,6 +4,40 @@ body {
   vertical-align: middle;
 }
 
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  line-height: 1.6;
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+ul {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.quellen {
+  line-height: 2.8;
+}
+
+
+
+
+
+/* _____________________________________styling for handling menu  _________________________________________________________________________ */
+
 *, *:before, *:after {
   box-sizing: inherit;
   -webkit-user-select: none;
