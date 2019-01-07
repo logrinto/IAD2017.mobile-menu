@@ -23,6 +23,7 @@ $(document).foundation();
 let navmenu = document.getElementById('nav-menu');
 let navwrapper = document.getElementById('nav-wrapper');
 let navpicture = document.getElementById('nav-picture');
+let scrollinfo = document.getElementById('scroll-info');
 $(navmenu).funcToggle('click', function() {
     $(navwrapper).css({
         transform: 'translateX(0)',
@@ -34,6 +35,7 @@ $(navmenu).funcToggle('click', function() {
     $(navmenu).css('transform','rotate(225deg)').css('left','65px');
     $('body').css('overflow-y', 'hidden');
     $('#nav-menu-outer').css('left','65px');
+    $(scrollinfo).addClass('arrowpos');
 }, 
 function() {
     $(navwrapper).css({
@@ -46,11 +48,12 @@ function() {
     $(navmenu).css('transform','').css('left','');
     $('body').css('overflow-y', '');
     $('#nav-menu-outer').css('left','');
+    $(scrollinfo).removeClass('arrowpos');
 });
 
 // background picture change function
 $(".evan").hover(function(){
-    $(navpicture).css("background-image", "url('./assets/img/evanspiegel.jpg')");
+    $(navpicture).css("background-image", "url('../preview/preview.jpg')");
     }, function(){
-    $(navpicture).css("background-image", "url('./assets/img/kimdotcom.jpg')");
+    $(navpicture).css("background-image", "url('../dotcom/preview.jpg')");
 });
