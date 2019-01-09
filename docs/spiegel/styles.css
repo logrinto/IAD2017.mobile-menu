@@ -18,11 +18,17 @@ p {
     text-align: left;
 }
 
+ul a {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
 a {
-    color: #F37272;
+    color: rgba(0, 0, 0, 0.8);;
     position: relative;
     text-decoration: none;
     padding-bottom: 1px;
+    font-weight: 600;
 }
 
 a:before, a:after {
@@ -32,7 +38,7 @@ a:before, a:after {
     left: 0;
     right: 0;
     height: 2px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #D9CD57;
 }
 
 a:before {
@@ -279,8 +285,8 @@ ul {
 }
 
 .window .header.menu-opened ul.menu li.menu-item:nth-child(7) {
-     transition-delay: 0.69s;
- }
+    transition-delay: 0.69s;
+}
 
 .window .header.menu-opened ul.menu li.menu-item:nth-child(8) {
     transition-delay: 0.76s;
