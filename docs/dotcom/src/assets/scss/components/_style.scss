@@ -2,15 +2,14 @@
 @import url('https://fonts.googleapis.com/css?family=Heebo:400,700');
 
 // Color 
-$colorbackground: #f5f5f5;
-$white: #fff;
+$colorbackground: #fff;
+$nav-font: #dddddd;
 
 
 // Basic
 
 html {
     font-family: 'Heebo', sans-serif;
-    font-size: 1rem;
     font-weight: 400;
     background-color: $colorbackground;
     min-height: 100vh;
@@ -30,7 +29,7 @@ body {
     left: 0;
     right: 0;
     transform: translateX(-100%);
-    background: $white;
+    background: $colorbackground;
     padding: 70px;
 }
 
@@ -48,6 +47,20 @@ body {
     cursor: pointer;
 }
 
+#nav-menu-mobile {
+    height: 30px;
+    width: 30px;
+    position: fixed;
+    right: 60px;
+    bottom: 20px;
+    z-index: 900;
+    background: url(../img/SVG/menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    cursor: pointer;
+}
+
 #nav-menu-outer {
     height: 30px;
     width: 30px;
@@ -57,44 +70,42 @@ body {
     z-index: 900;
 }
 
-.nav-label {
-    transform: rotate(270deg) translateX(-9px) translateY(30px);
-    font-size: 60%;
-    font-weight: 700;
-    letter-spacing: 2px;
-}
-
-#nav-menu-mobile {
-    height: 30px;
-    width: 30px;
-    position: fixed;
-    right: 70px;
-    bottom: 70px;
-    z-index: 900;
-    background: url(../img/SVG/menu.svg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    cursor: pointer;
-}
-
 #nav-menu-outer-mobile {
     height: 30px;
     width: 30px;
     position: fixed;
-    right: 70px;
-    bottom: 70px;
+    right: 60px;
+    bottom: 20px;
     z-index: 900;
 }
 
-.nav-label-mobile {
-    transform: translateY(35px);
-    font-size: 60%;
-    font-weight: 700;
-    letter-spacing: 2px;
+#nav-bg {
+    height: 100vh; 
+    width: 70px; 
+    position: fixed; 
+    left: 0; 
+    bottom: 0;  
+    background: $colorbackground;
+    border-right: #000 solid 1px;
 }
 
-#nav-menu:hover {
+.nav-label {
+    transform: translateY(40px);
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-label-mobile {
+    transform: rotate(270deg) translateX(-8px) translateY(30px);
+    font-size: 0.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#nav-menu:hover, #nav-menu-mobile:hover {
     transform: rotate(180deg);
 }
 
@@ -103,7 +114,7 @@ body {
     height: calc(100vh - 140px);
     background: $colorbackground;
     transform: translateX(calc(-100% - 6rem));
-    background: url(../img/preview.jpg);
+    background: url(./dotcom/preview.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -167,9 +178,9 @@ body {
 #scroll-info {
     position: fixed;
     z-index: 600;
-    bottom: 67px;
+    bottom: 70px;
     left: -90px;
-    font-size: 0.4375rem;
+    font-size: 0.5rem;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: 700;
@@ -214,15 +225,12 @@ body {
 // IDs
 
 #content {
-    margin-top: 5rem;
+    margin-top: 8vh;
 }
 
 // Font 
 
 h1 {
-    font: {
-        size: 3rem;
-    } 
     line-height: 1.25;
 }
 
@@ -235,7 +243,7 @@ p {
 
 #nav-inner a {
     line-height: 1.5;
-    color: $colorbackground;
+    color: $nav-font;
     text-decoration: none;
     cursor: pointer;
     font: {
@@ -272,9 +280,6 @@ p {
 
 /* Small only */
 @media screen and (max-width: 39.9375em) {
-    html {
-        font-size: 100%;
-    }
 
     #nav-inner a {
         font: {
@@ -293,10 +298,18 @@ p {
     .arrowpos {
         left: calc(50% - 25px) !important;
     }
-
-
-    body {
-        border-bottom: solid 170px $white;
+    
+    #content {
+        padding-bottom: 200px;
     }
 
+    #nav-bg {
+        height: 70px; 
+        width: 100vw; 
+        position: fixed; 
+        left: 0; 
+        bottom: 0;  
+        background: $colorbackground;
+        border-top: #000 solid 1px;
+    }
 }
