@@ -32,7 +32,7 @@ function loadConfig() {
 // Build the "dist" folder by running all of the below tasks
 // Sass must be run later so UnCSS can search for used classes in the others assets.
 gulp.task('build',
- gulp.series(clean, gulp.parallel(pages, javascript, images, copy), sass/* , styleGuide */));
+ gulp.series(clean, gulp.parallel(pages, javascript, images, preview, copy), sass/* , styleGuide */));
 
 // Build the site, run the server, and watch for file changes
 gulp.task('default',
@@ -146,6 +146,14 @@ function images() {
     .pipe(gulp.dest(PATHS.dist + '/assets/img'));
 }
 
+function preview() {
+    return gulp.src('src/assets/img/preview.jpg')
+      .pipe($.if(PRODUCTION, $.imagemin([
+        $.imagemin.jpegtran({ progressive: true }),
+      ])))
+      .pipe(gulp.dest(PATHS.dist + '/'));
+  }
+
 // Start a server with BrowserSync to preview the site in
 function server(done) {
   browser.init({
@@ -168,6 +176,6 @@ function watch() {
   gulp.watch('src/helpers/**/*.js').on('all', gulp.series(resetPages, pages, browser.reload));
   gulp.watch('src/assets/scss/**/*.scss').on('all', sass);
   gulp.watch('src/assets/js/**/*.js').on('all', gulp.series(javascript, browser.reload));
-  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, browser.reload));
+  gulp.watch('src/assets/img/**/*').on('all', gulp.series(images, preview, browser.reload));
   gulp.watch('src/styleguide/**').on('all', gulp.series(styleGuide, browser.reload));
 }
