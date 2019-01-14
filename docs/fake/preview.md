@@ -1,1 +1,2 @@
-[Lachlan Rogers](https://www.flickr.com/photos/lachlanrogers/2938134458/)
+[Caterina Fake](https://techcrunch.com/2018/01/24/founders-caterina-fake-and-jyri-engestrom-make-it-official-with-a-new-venture-fund-yes-vc/
+)
