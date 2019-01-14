@@ -1,0 +1,195 @@
+body {
+  font-size: 12px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+div {
+  margin: 0;
+}
+
+img {
+  margin: 0;
+}
+
+.menufont {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.9rem;
+  margin-left: -250px;
+}
+
+a:hover {
+  color: #303030;
+}
+
+.name {
+  font-family: 'Zilla Slab', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  margin-top: 1rem;
+}
+
+.copy {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin-right: 1rem;
+}
+
+.copyquelle {
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  color: #adadad;
+}
+
+.hidden {
+  display: none;
+}
+
+.zoom {
+  transform: scale(1.4);
+}
+
+.quelle {
+  transform: scale(0.03);
+  transform-origin: left;
+}
+
+#menu {
+  width: 40px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 10px;
+  z-index: -1;
+}
+
+#menuclose {
+  width: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#menunames {
+  color: #878787;
+  cursor: pointer;
+}
+
+.container {
+  display: grid;
+  height:100vh;
+  width: 100%;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  align-items: top;
+  justify-items: left;
+}
+
+.menugrid {
+  grid-area: menugrid;
+  grid-column-start:1;
+  grid-column-end:2;
+  grid-row-start:1;
+  grid-row-end:1;
+}
+
+.about {
+  grid-area: about;
+  grid-column-start:2;
+  grid-column-end:4;
+  grid-row-start:1;
+  grid-row-end:1;
+}
+
+.content {
+  grid-area: content;
+  grid-column-start:4;
+  grid-column-end:6;
+  grid-row-start:1;
+  grid-row-end:1;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #898989;
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) { /* oder rem/em */
+
+  .menufont {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.8rem;
+    margin-left: -250px;
+  }
+
+  .about {
+    grid-area: about;
+    grid-column-start:1;
+    grid-column-end:6;
+    grid-row-start:1;
+    grid-row-end:1;
+    margin-left: 20px;
+  }
+
+  .content {
+    grid-area: content;
+    grid-column-start:1;
+    grid-column-end:6;
+    grid-row-start:2;
+    grid-row-end:2;
+    margin-left: 20px;
+  }
+
+  .name {
+    font-family: 'Zilla Slab', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2rem;
+    margin-top: 1rem;
+  }
+
+  .copy {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    margin-right: 1rem;
+  }
+
+  .copyquelle {
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    color: #adadad;
+  }
+
+}
