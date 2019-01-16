@@ -317,7 +317,7 @@ ul {
 .window .content {
     font-family: "Ek Mukta", sans-serif;
     padding: 67px 20% 0;
-    text-align: justify;
+    text-align: left;
     overflow: scroll;
     max-height: 100%;
 }
