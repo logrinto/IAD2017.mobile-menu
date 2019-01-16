@@ -1,15 +1,36 @@
+
+
 button:focus {
   outline: 0;
 }
 
 /* nat entwurf */
 
+.container {
+  display: grid;
+  height:100vh;
+  width: 100%;
+  grid-template-columns: 16.66% 16.66% 16.66% 16.66% 16.66% 16.66%;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  align-items: top;
+  justify-items: left;
+}
+
+
 .content {
     font-family: opensans;
     margin: 5rem;
     max-height: 100%;
-    margin-top: 1rem;
-}
+    margin-top: 0rem;
+    grid-area: content;
+    grid-column-start:1;
+    grid-column-end:5;
+    grid-row-start:1;
+    grid-row-end:1;
+
+  }
 
 h1 {
   color: #FF0080;
@@ -50,7 +71,7 @@ a {
   min-width: 200px;
   overflow: auto;
   margin-left: 3.5rem;
-  margin-top: -0.35rem;
+  margin-top: 0.5rem;
 
 }
 
@@ -76,76 +97,6 @@ a {
 	border: none;
 	background-color: #CEE3F6;
 	z-index: 3;
-}
-
-
-
-
-/* span in button  */
-.navigation--hamburger {
-	position: absolute;
-  top: 50%;
-  left: 50%;
-	transition-property: transform;
-	transition-timing-function: cubic-bezier(.55, .055, .675, .19);
-	transition-duration: .22s;
-	margin-top: -2px;
-	margin-left: -.8rem;
-	display: block
-}
-
-/* strokes  */
-.navigation--hamburger,
-.navigation--hamburger:after,
-.navigation--hamburger:before {
-	width: 1.6rem;
-	height: 4px;
-	background-color: #FF0080;
-}
-
-/* strokes before and after  */
-.navigation--hamburger:after,
-.navigation--hamburger:before {
-	content: "";
-	display: block;
-	position: absolute;
-	transition-property: transform;
-	transition-duration: .15s;
-	transition-timing-function: ease
-}
-
-.navigation--hamburger:before {
-	top: -10px;
-  transition: top .1s ease-in .25s
-}
-.navigation--hamburger:after {
-	bottom: -10px;
-  transition: bottom .1s ease-in .25s, transform .22s cubic-bezier(.55, .055, .675, .19)
-}
-
-.nav-open .navigation--hamburger {
-	transform: rotate(45deg);
-	transition-delay: .12s;
-	transition-timing-function: cubic-bezier(.215, .61, .355, 1)
-}
-.nav-open .navigation--hamburger:before {
-	top: 0;
-	opacity: 0;
-	transition: top .1s ease-out, opacity .1s ease-out .12s
-}
-.nav-open .navigation--hamburger:after {
-	bottom: 0;
-	-ms-transform: rotate(-90deg);
-	transform: rotate(-90deg);
-	transition: bottom .1s ease-out, transform .22s cubic-bezier(.215, .61, .355, 1) .12s
-}
-.navigation--label {
-	position: absolute!important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: polygon(0 0, 0 0, 0 0, 0 0)
 }
 
 
@@ -189,6 +140,17 @@ a {
   text-decoration: none;
   font-family: opensans;
   font-weight: bolder;
+}
+
+
+#myDIV {
+    width: 200px;
+    height: 48px;
+    overflow: auto;
+}
+#myDIV:hover {
+    width: 200px;
+    height: 620px;
 }
 
 
