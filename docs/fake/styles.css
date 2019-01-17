@@ -10,6 +10,7 @@ h1 {
   font-size: 2.9rem;
   font-weight: 700;
   line-height: 1.2;
+  margin:0;
 }
 
 h2 {
@@ -47,19 +48,26 @@ a:link {
   color: black;
 }
 
+a.text {
+  text-decoration: underline;
+  line-height: 1.6;
+
+
+}
+
 /* visited link */
 a:visited {
-  color: black !important;
+  color: black;
 }
 
 /* mouse over link */
 a:hover {
-  color: #d51841 !important;
+  color: #d51841;
 }
 
 /* selected link */
 a:active {
-  color: #d51841;
+  color:black;
 }
 
 .quoteauthor {
@@ -84,15 +92,38 @@ a:active {
 }
 
 .spacebottom {
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+}
+
+.border {
+  border-width: 0.5px 0;
+    border-style: solid;
+    border-color: #A1A1A1;
+    margin-bottom: 15px;
+    margin-top: 55px;
 }
 
 /* media queries for desktop*/
-@media (min-width: 901px) and (max-width: 1280px) {
+@media (min-width: 1800px) and (max-width: 2700px) {
+  .pageContainer {
+    margin-left:35%;
+    margin-right:35%;
+}
+
+  .quote {
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+}
+
+/* media queries for desktop*/
+@media (min-width: 901px) and (max-width: 1799px) {
   .pageContainer {
     margin-left:25%;
     margin-right:25%;
 }
+
 .quote {
   margin-left: 100px;
   margin-right: 100px;
@@ -112,7 +143,7 @@ a:active {
 }
 /* _____________________________________styling for handling menu  _________________________________________________________________________ */
 
-*, *:before, *:after {
+/**, *:before, *:after {
   box-sizing: inherit;
   -webkit-user-select: none;
   -moz-user-select: none;
@@ -123,7 +154,7 @@ a:active {
 
 * {
     user-select: none;
-}
+}*/
 
 button {
   border: none;
@@ -159,6 +190,15 @@ LEVEL 2. MENU STYLES
 /* menu */
 a.menulink:link {
   color:white !important;
+}
+a.linkmine:link {
+  color:white !important;
+  opacity: 0.4;
+}
+
+a.linkmine:visited {
+  color:white !important;
+  opacity: 0.4;
 }
 
 a.menulink:visited {
@@ -210,8 +250,8 @@ a.menulink:hover {
   font-size: 1rem;
   font-weight: 700;
   color:white;
-  line-height: 2.5;
-  letter-spacing: 0.5px;
+  line-height: 2.7;
+  letter-spacing: 0.7px;
   margin:0;
   padding:0;
 
