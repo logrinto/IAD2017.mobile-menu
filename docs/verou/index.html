@@ -36,7 +36,7 @@ html {
 .container.open-sidebar { left: 240px; }
 
 .swipe-area {
-  position: absolute;
+  position: fixed;
   width: 50px;
   left: 0;
   top: 0;
@@ -90,6 +90,7 @@ html {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   position: relative;
+  overflow: auto;
 }
 
 .main-content .content {
@@ -103,6 +104,13 @@ html {
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 700;
   font-size: 32px;
+}
+
+.main-content .content h2 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 40px;
 }
 
 
@@ -174,10 +182,21 @@ html {
 
 
 
-  <p>
-    Lea Verou wurde am 13. Juni 1986 in Griechenland geboren. 2013 schloss sie mit einem Bachelor of Science in Computer Science an der Ahens University of Economics and Business ab. Den Master machte sie anschliessend am Massachusetts Institute of Technology (MIT), schloss 2017 ab und macht momentan den Philosophical Doctor am MIT, den sie voraussichtlich 2020 abschliessen wird. In Ihrer gesammten Studienzeit war sie als Teaching- und Research-Assistant tätig.
-2015 publizierte sie im Buch «CSS Secrets» von O'Reilly Media im Kapitel «Smashing Book #3» zusammen mit David Storey. Lea Verou ist Mitglied der Haystack Group am MIT CSAIL, welche es sich zur Aufgabe gemacht hat, es für Personen einfacher zu machen, Informationen zu sammeln, organisieren, visualisieren und zu teilen. Darüber hinaus arbeitet sie an diversen Open-Source-Projekten (https://github.com/leaverou) und ist eine von wenigen Expertinnen an der  W3C CSS Working Group, welche sich um die Gestaltungen und Erweiterungen der CSS-Sprache kümmert.
-Lea Verou hat eine Vorliebe für Hüte, bunte Haare und Foodblogging. Auf Ihrem Instagram-Feed forkgasm https://www.instagram.com/forkgasms/ mit 844 Abonnenten können über 2800 schön inszenierte Foodporn-Fotos betrachtet werden. Mit einer Vorliebe für Meeresfrüchte und Rotwein sind ihre griechischen Wurzeln unübersehbar. 
+
+    <h2>Leben und Ausbildung</h2>
+    <p>Lea Verou wurde am 13. Juni 1986 in Griechenland geboren. 2013 schloss sie mit einem Bachelor of Science in Computer Science an der Athens University of Economics and Business ab. Den Master machte sie anschliessend am Massachusetts Institute of Technology (MIT), schloss 2017 ab und macht momentan den Philosophical Doctor am MIT, den sie voraussichtlich 2020 abschliessen wird. In Ihrer gesammten Studienzeit war sie als Teaching- und Research-Assistant tätig.</p>
+
+
+    <h2>Arbeit und Publikationen</h2>
+    <p>2015 publizierte sie im Buch «CSS Secrets» von O'Reilly Media im Kapitel «Smashing Book #3» zusammen mit David Storey. Lea Verou ist Mitglied der Haystack Group am MIT CSAIL, welche es sich zur Aufgabe gemacht hat, es für Personen einfacher zu machen, Informationen zu sammeln, organisieren, visualisieren und zu teilen. Darüber hinaus arbeitet sie an diversen Open-Source-Projekten (https://github.com/leaverou) und ist eine von wenigen Expertinnen an der  W3C CSS Working Group, welche sich um die Gestaltungen und Erweiterungen der CSS-Sprache kümmert.</p>
+
+
+    <h2>Privates</h2>
+    <p>Lea Verou hat eine Vorliebe für Hüte, bunte Haare und Foodblogging. Auf Ihrem Instagram-Feed forkgasm https://www.instagram.com/forkgasms/ mit 844 Abonnenten können über 2800 schön inszenierte Foodporn-Fotos betrachtet werden. Mit einer Vorliebe für Meeresfrüchte und Rotwein sind ihre griechischen Wurzeln unübersehbar.</p>
+
+    <h2>Quellen</h2>
+
+
 
 
 
@@ -189,7 +208,7 @@ Lea Verou hat eine Vorliebe für Hüte, bunte Haare und Foodblogging. Auf Ihrem 
 
 <!-- JAVASCRIPT -->
 
-<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
 <script>
   $(window).load(function(){
