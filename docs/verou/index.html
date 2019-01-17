@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lea Verou</title>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&amp;subset=greek" rel="stylesheet">
+
+
+
+<!-- CSS -->
+
+<style>
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  font-family: helvetica;
+  font-weight: 100;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  -webkit-transition: left 0.4s ease-in-out;
+  -moz-transition: left 0.4s ease-in-out;
+  -ms-transition: left 0.4s ease-in-out;
+  -o-transition: left 0.4s ease-in-out;
+  transition: left 0.4s ease-in-out;
+}
+
+.container.open-sidebar { left: 240px; }
+
+.swipe-area {
+  position: absolute;
+  width: 50px;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #ac00e6;
+  z-index: 0;
+}
+
+#sidebar {
+  background: #cc33ff;
+  position: absolute;
+  width: 240px;
+  height: 100%;
+  left: -240px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#sidebar ul {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#sidebar ul li { margin: 0; }
+
+#sidebar ul li a {
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 100;
+  color: white;
+  text-decoration: none;
+  display: block;
+  border-bottom: 1px solid #ac00e6;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+}
+
+#sidebar ul li:hover a { background: #ac00e6; }
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  position: relative;
+}
+
+.main-content .content {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding-left: 60px;
+  width: 100%;
+}
+
+.main-content .content h1 {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+
+.main-content .content p {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  line-height: 160%;
+}
+
+.main-content #sidebar-toggle {
+  background: #cc33ff;
+  border-radius: 3px;
+  display: block;
+  position: relative;
+  padding: 10px 7px;
+  float: left;
+}
+
+.main-content #sidebar-toggle .bar {
+  display: block;
+  width: 18px;
+  margin-bottom: 3px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 1px;
+}
+
+.main-content #sidebar-toggle .bar:last-child { margin-bottom: 0; }
+</style>
+
+
+</head>
+
+
+<!-- HTML-->
+
+<body>
+  <div class="container">
+
+    <div id="sidebar">
+      <ul>
+        <li><a href="#">Pascale Anderegg</a></li>
+        <li><a href="#">Marius Becker</a></li>
+        <li><a href="#">Stephanie Fuchs</a></li>
+        <li><a href="#">Marc Hatt</a></li>
+        <li><a href="#">Severin Kilchhofer</a></li>
+        <li><a href="#">Matthias Koch</a></li>
+        <li><a href="#">Lars Mäder</a></li>
+        <li><a href="#">Nils Mäder</a></li>
+        <li><a href="#">Tieu Khe Mayer</a></li>
+        <li><a href="#">Natasha Ruf</a></li>
+        <li><a href="#">Wolfgang Schoeck</a></li>
+        <li><a href="#">Nicole Watrinet</a></li>
+
+      </ul>
+    </div>
+
+  <div class="main-content">
+    <div class="swipe-area"></div>
+      <a href="#" data-toggle=".container" id="sidebar-toggle"> <span class="bar"></span>
+      <span class="bar"></span> <span class="bar"></span> </a>
+        <div class="content">
+            <h1>Lea <i>(Michailia/Μιχαήλια)</i> Verou</h1>
+            <script type="text/javascript"></script>
+
+
+
+
+
+  <p>
+    Lea Verou wurde am 13. Juni 1986 in Griechenland geboren. 2013 schloss sie mit einem Bachelor of Science in Computer Science an der Ahens University of Economics and Business ab. Den Master machte sie anschliessend am Massachusetts Institute of Technology (MIT), schloss 2017 ab und macht momentan den Philosophical Doctor am MIT, den sie voraussichtlich 2020 abschliessen wird. In Ihrer gesammten Studienzeit war sie als Teaching- und Research-Assistant tätig.
+2015 publizierte sie im Buch «CSS Secrets» von O'Reilly Media im Kapitel «Smashing Book #3» zusammen mit David Storey. Lea Verou ist Mitglied der Haystack Group am MIT CSAIL, welche es sich zur Aufgabe gemacht hat, es für Personen einfacher zu machen, Informationen zu sammeln, organisieren, visualisieren und zu teilen. Darüber hinaus arbeitet sie an diversen Open-Source-Projekten (https://github.com/leaverou) und ist eine von wenigen Expertinnen an der  W3C CSS Working Group, welche sich um die Gestaltungen und Erweiterungen der CSS-Sprache kümmert.
+Lea Verou hat eine Vorliebe für Hüte, bunte Haare und Foodblogging. Auf Ihrem Instagram-Feed forkgasm https://www.instagram.com/forkgasms/ mit 844 Abonnenten können über 2800 schön inszenierte Foodporn-Fotos betrachtet werden. Mit einer Vorliebe für Meeresfrüchte und Rotwein sind ihre griechischen Wurzeln unübersehbar. 
+
+
+
+  </p>
+          </div>
+        </div>
+      </div>
+
+
+<!-- JAVASCRIPT -->
+
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script>
+<script>
+  $(window).load(function(){
+        $("[data-toggle]").click(function() {
+          var toggle_el = $(this).data("toggle");
+          $(toggle_el).toggleClass("open-sidebar");
+        });
+         $(".swipe-area").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           $(".container").addClass("open-sidebar");
+                           return false;
+                      }
+                      if (phase=="move" && direction =="left") {
+                           $(".container").removeClass("open-sidebar");
+                           return false;
+                      }
+                  }
+          });
+      });
+</script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</body>
+</html>
