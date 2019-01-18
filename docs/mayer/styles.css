@@ -89,16 +89,6 @@ h4 {
 /* For width 1500px and smaller: */
 @media only screen and (max-width: 1600px) {
 
-  .menu-list {
-    text-decoration: none;
-    margin-top: 100px;
-    text-align: center;
-    font-family: 'Fira Sans', Helvetica;
-    color: white;
-    font-size: 30px;
-    opacity: 0;
-
-
 
 .container {
   position: relative;
@@ -180,15 +170,6 @@ h4 {
 
 /* For width 1300px and smaller: */
 @media only screen and (max-width: 1300px) {
-
-  .menu-list {
-    text-decoration: none;
-    margin-top: 100px;
-    text-align: center;
-    font-family: 'Fira Sans', Helvetica;
-    color: white;
-    font-size: 30px;
-    opacity: 0;
 
   .container {
     position: relative;
@@ -272,14 +253,6 @@ h4 {
 /* For width 990px and smaller: */
 @media only screen and (max-width: 990px) {
 
-  .menu-list {
-    text-decoration: none;
-    margin-top: 100px;
-    text-align: center;
-    font-family: 'Fira Sans', Helvetica;
-    color: white;
-    font-size: 30px;
-    opacity: 0;
 
 .container {
   position: relative;
@@ -362,15 +335,6 @@ h4 {
 /* For width 600px and smaller: */
 @media only screen and (max-width: 600px) {
 
-.menu-list {
-      text-decoration: none;
-      margin-top: 80px;
-      text-align: center;
-      font-family: 'Fira Sans', Helvetica;
-      color: white;
-      font-size: 14px;
-      opacity: 0;
-}
 
 .container {
   position: relative;
