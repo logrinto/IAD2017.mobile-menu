@@ -57,7 +57,7 @@ a.text {
 
 /* visited link */
 a:visited {
-  color: black;
+  color: black !important;
 }
 
 /* mouse over link */
@@ -101,6 +101,10 @@ a:active {
     border-color: #A1A1A1;
     margin-bottom: 15px;
     margin-top: 55px;
+}
+
+.zeile2 {
+  line-height: 10px !important;
 }
 
 /* media queries for desktop*/
