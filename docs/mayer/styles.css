@@ -1,0 +1,589 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:200,300,400,500,600,700,800');
+
+
+
+
+.container {
+  position: relative;
+  display:grid;
+  grid-template-columns: 450px 1fr 450px;
+  grid-template-rows: auto ;
+  grid-gap:2em;
+/*   grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+
+/*  grid-template-areas:*/
+}
+
+.container > div {
+/*  background: #eee;*/
+  grid-column: 2;
+}
+
+
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Fira Sans';
+  font-weight:300;
+  line-height: 1.7rem;
+}
+
+/* Quick Style Setup */
+body {
+  margin: 0em;
+  width: 100%;
+  height: 700px;
+  padding-bottom: 80%;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 7rem;
+  line-height: 7.1rem;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+h4 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+
+/* For width 1500px and smaller: */
+@media only screen and (max-width: 1600px) {
+
+.container {
+  position: relative;
+  display:grid;
+  grid-template-columns: 300px 1fr 300px;
+  grid-template-rows: auto ;
+  grid-gap:2em;
+/*   grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+
+/*  grid-template-areas:*/
+}
+
+.container > div {
+/*  background: #eee;*/
+  grid-column: 2;
+}
+
+
+
+p {
+  font-size: 1.2rem;
+  font-family: 'Fira Sans';
+  font-weight:300;
+  line-height: 1.7rem;
+}
+
+/* Quick Style Setup */
+body {
+  margin: 0em;
+  width: 100%;
+  height: 700px;
+  padding-bottom: 80%;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 7rem;
+  line-height: 7.2rem;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+h4 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.6rem;
+  line-height: 2.1rem;
+}
+
+}
+
+
+
+
+/* For width 1300px and smaller: */
+@media only screen and (max-width: 1300px) {
+
+  .container {
+    position: relative;
+    display:grid;
+    grid-template-columns: 120px 1fr 120px;
+    grid-template-rows: auto ;
+    grid-gap:2em;
+  /*   grid-column-gap: 1em;
+    grid-row-gap: 1em; */
+
+  /*  grid-template-areas:*/
+  }
+
+  .container > div {
+  /*  background: #eee;*/
+    grid-column: 2;
+  }
+
+
+
+  p {
+    font-size: 1.2rem;
+    font-family: 'Fira Sans';
+    font-weight:300;
+    line-height: 1.7rem;
+  }
+
+  /* Quick Style Setup */
+  body {
+    margin: 0em;
+    width: 100%;
+    height: 700px;
+    padding-bottom: 80%;
+
+  }
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans';
+    font-weight: 200;
+    font-size: 7rem;
+    line-height: 7.2rem;
+  }
+
+  h2 {
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Fira Sans';
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    letter-spacing: 2px;
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Fira Sans';
+    font-weight: 200;
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+
+  h4 {
+    margin: 0;
+    padding-top: 10px;
+    font-family: 'Fira Sans';
+    font-weight: 200;
+    font-size: 1.6rem;
+    line-height: 2.1rem;
+  }
+
+}
+
+
+
+
+
+/* For width 990px and smaller: */
+@media only screen and (max-width: 990px) {
+
+.container {
+  position: relative;
+  display:grid;
+  grid-template-columns: 70px 1fr 70px;
+  grid-template-rows: auto ;
+  grid-gap:2em;
+/*   grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+
+/*  grid-template-areas:*/
+}
+
+.container > div {
+/*  background: #eee;*/
+  grid-column: 2;
+}
+
+
+
+p {
+  font-size: 1rem;
+  font-family: 'Fira Sans';
+  font-weight:300;
+  line-height: 1.5rem;
+}
+
+/* Quick Style Setup */
+body {
+  margin: 0em;
+  width: 100%;
+  height: 700px;
+  padding-bottom: 80%;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+h4 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+}
+}
+
+
+
+
+
+/* For width 600px and smaller: */
+@media only screen and (max-width: 600px) {
+
+.container {
+  position: relative;
+  display:grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: auto ;
+  grid-gap:2em;
+/*   grid-column-gap: 1em;
+  grid-row-gap: 1em; */
+
+/*  grid-template-areas:*/
+}
+
+.container > div {
+/*  background: #eee;*/
+  grid-column: 2;
+}
+
+
+
+p {
+  font-size: 1rem;
+  font-family: 'Fira Sans';
+  font-weight:300;
+  line-height: 1.5rem;
+}
+
+/* Quick Style Setup */
+body {
+  margin: 0em;
+  width: 100%;
+  height: 700px;
+  padding-bottom: 80%;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  letter-spacing: 2px;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+
+
+h4 {
+  margin: 0;
+  padding-top: 10px;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+  font-size: 1.4rem;
+  line-height: 1.9rem;
+
+.quellen {
+  padding-bottom: 100px;
+}
+
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  color: #875770;
+  cursor: pointer;
+  text-decoration: none;
+  font-family: 'Fira Sans';
+  font-weight: 200;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+  color: #b8849e;
+}
+/* Relative Code Starts Here */
+
+.nav-menu {
+  z-index: 1300;
+  background: none;
+  width: 60px;
+  height: 0px;
+  top: 0;
+  right: 15px;
+  -webkit-transition: width 0.2s ease, height 0.4s ease;
+	-moz-transition: width 0.2s ease, height 0.4s ease;
+	-o-transition: width 0.2s ease, height 0.4s ease;
+	transition: width 0.2s ease, height 0.4s ease;
+}
+.open {
+  position: fixed;
+  background: #592d45;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+}
+.menu-list {
+  text-decoration: none;
+  margin-top: 100px;
+  text-align: center;
+  font-family: 'Fira Sans', Helvetica;
+  color: white;
+  font-size: 30px;
+  opacity: 0;
+}
+.list-open {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+	-moz-transition: opacity 0.3s ease;
+	-o-transition: opacity 0.3s ease;
+	transition: opacity 0.64s ease;
+  -webkit-transition-delay: 0.34s;
+  -moz-transition-delay: 0.34s;
+  -o-transition-delay: 0.34s;
+  transition-delay: 0.34s;
+}
+.menu-list li {
+  padding: 10px;
+  background: none;
+  color: #fff;
+}
+
+/*
+.menu-list li:hover {
+  background: #fff;
+  color: #39D;
+  cursor: pointer;
+}
+*/
+
+/* Burger */
+#burger-wrap {
+  position: fixed;
+  top: 0;
+  right: 15px;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 80px;
+}
+.burger {
+  position: fixed;
+  top: 9px;
+  right: 15px;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  background-color: transparent;
+}
+.burger span {
+  display: block;
+  position: absolute;
+  top: 30px;
+  left: 16px;
+  right: 16px;
+  height: 3px;
+  background: #b8849e;
+  border-radius: 15px;
+  -webkit-transition: background 0.3s .3s;
+  transition: background 0.3s .3s;
+  -o-transition: background 0s 0s;
+  -webkit-transition-delay: 0.4s,0s;
+  transition-delay: 0.4s,0s;
+}
+.open .burger span {
+  background: 0 0 transparent;
+  transform: rotate(90deg);
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -o-transition: all 0s ease;
+	-webkit-transition-delay: 0s,0s;
+	transition-delay: 0s,0s;
+}
+.burger span::after,
+.burger span::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #b8849e;
+  content: "";
+	border-radius: 5px;
+  -webkit-transition-duration: .3s,.3s;
+  transition-duration: .3s,.3s;
+  -webkit-transition-delay: 0.4s,0s;
+  transition-delay: 0.4s,0s;
+}
+.burger span::before {
+  top: -8px;
+  -webkit-transition-property: top,-webkit-transform;
+  transition-property: top,transform;
+}
+.burger span::after {
+  bottom: -8px;
+  -webkit-transition-property: bottom,-webkit-transform;
+  transition-property: bottom,transform;
+}
+
+.open .burger span::after,
+.open .burger span::before {
+  -webkit-transition-delay: 0s,.4s;
+  transition-delay: 0s,.4s;
+  background-color: #b8849e;
+}
+.open .burger span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.open .burger span::after {
+  bottom: 1px; /* Fix for codepen, set to zero for normal use */
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+
+/* Disable scrollbar on Chrome and Safari browsers! */
+html::-webkit-scrollbar { width: 0 !important; height: 0 !important; }
