@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+
 /*  MAIN
 ========================================== */
 .content {
@@ -32,6 +34,13 @@ html {
     opacity: 0.3;
 }
 
+h1 {
+    font-size: 3rem;
+    font-weight: light;
+    color: #b7ac7f;
+    padding-top: 2%;
+}
+
 h2 {
     font-size: 1rem;
     color: lightgray;
@@ -51,35 +60,27 @@ a {
     -webkit-text-decoration-skip: objects;
 }
 
+p {
+    padding-top: 2%;
+
+}
+
 a:hover {
     color: white;
     text-decoration: none;
 }
 
-burger {
-    color: #b7ac7f;
-
+.burger span, .burger span::before, .burger span::after {
+    background-color: white !important;
 }
 
-burger:hover {
-    cursor: pointer;
-    color: #b7ac7f;
-
+.burger.clicked span {
+    background-color: transparent !important;
 }
 
+.row {
+    padding-left: 10px;
 
-burger.clicked:hover {
-    cursor: pointer;
-    color: #b7ac7f;
-
-}
-
-nav ul.main li a {
-    color: #b7ac7f;
-}
-
-nav ul.main li a:hover {
-    color: white;
 }
 
 
