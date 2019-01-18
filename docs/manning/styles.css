@@ -21,9 +21,10 @@ button:focus {
 
 .content {
     box-sizing: border-box;
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
     margin: 5rem;
     max-height: 100%;
+    max-width: 100%;
     margin-top: 0rem;
     grid-area: content;
     grid-column-start:1;
@@ -35,13 +36,13 @@ button:focus {
 
 h1 {
   color: #FF0080;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
 }
 
 h2 {
   color: #FF0080;
-  font-family: "Open Sans Condensed";
+  font-family: "Open Sans Condensed", sans-serif;
   font-weight: bold;
   padding-top: 4rem;
 }
@@ -66,16 +67,18 @@ a {
 }
 
 .nav-content {
-  display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 200px;
   overflow: auto;
   margin-left: 3.5rem;
   margin-top: 0.5rem;
-
+  overflow: hidden;
+  width: 0px;
 }
-
+.nav-content.show {
+  width: auto;
+  overflow: auto;
+}
 
 .nav-content a {
   color: black;
@@ -105,7 +108,7 @@ a {
 /* menu einstellungen */
 
 .menu {
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -125,7 +128,7 @@ a {
 
   height: 1.5rem;
   text-decoration: none;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
 }
 .menu--list-item-link--active,
 .menu--list-item-link:focus,
@@ -149,14 +152,10 @@ a {
     height: 48px;
     overflow: auto;
 }
-#myDIV:hover {
-    width: 200px;
-    height: 620px;
+.show #myDIV {
+    height: 630px;
+    width: 220px;
 }
 
 
 /*.dropdown-content a:hover {background-color: #f1f1f1}*/
-
-.show {
-  display:block;
-}
