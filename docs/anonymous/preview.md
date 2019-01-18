@@ -1,1 +1,1 @@
-[Lachlan Rogers](https://www.flickr.com/photos/lachlanrogers/2938134458/)
+Vincent Diamante [CC BY-SA 2.0 (https://creativecommons.org/licenses/by-sa/2.0)], via Wikimedia Commons
