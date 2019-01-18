@@ -20,7 +20,7 @@ button:focus {
 
 
 .content {
-    font-family: opensans;
+    font-family: "Open Sans Condensed";
     margin: 5rem;
     max-height: 100%;
     margin-top: 0rem;
@@ -104,7 +104,7 @@ a {
 /* menu einstellungen */
 
 .menu {
-  font-family: opensans;
+  font-family: "Open Sans Condensed";
   font-size: 1.3rem;
   text-decoration: none;
 }
@@ -124,7 +124,7 @@ a {
 
   height: 1.5rem;
   text-decoration: none;
-  font-family: opensans;
+  font-family: "Open Sans Condensed";
 }
 .menu--list-item-link--active,
 .menu--list-item-link:focus,
