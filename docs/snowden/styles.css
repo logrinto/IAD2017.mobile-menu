@@ -211,7 +211,7 @@ button.mobile_nav {
     position: absolute;
     margin-top: 10px;
     border: none;
-    background-image: url(../snowden/-img/noun_menu_1814288_000000.svg);
+    background-image: url(./snowden/-img/noun_menu_1814288_000000.svg);
 }
 
 button.mobile_nav_close {
@@ -221,7 +221,7 @@ button.mobile_nav_close {
     position: absolute;
     margin-top: 10px;
     border: none;
-    background-image: url(../snowden/-img/noun_Close_1746028_000000.svg);
+    background-image: url(./snowden/-img/noun_Close_1746028_000000.svg);
 }
 
 /**Mediaqueries**/
