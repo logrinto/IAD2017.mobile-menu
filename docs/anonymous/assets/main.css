@@ -72,6 +72,11 @@ a:hover {
     margin-left: 0;
 }
 
+.burger{
+    background-color: transparent;
+    color: transparent;
+}
+
 
 /*  RESET
 ========================================== */
