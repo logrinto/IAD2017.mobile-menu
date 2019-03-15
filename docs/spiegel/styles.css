@@ -22,6 +22,11 @@ button {
     background-color: rgba(45, 45, 45, 0.8);
     border: none;
 }
+
+li {
+    list-style-type: none;
+}
+
 ul a {
     font-weight: 600;
     font-size: 1.2rem;
